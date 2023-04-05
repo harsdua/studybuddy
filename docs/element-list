@@ -1,0 +1,7 @@
+module:ulb.infof307.g03
+com.hd.controller
+com.hd.controller.controllers
+com.hd.controller.managers
+com.hd.model
+com.hd.view
+com.hd.view.editingDeck

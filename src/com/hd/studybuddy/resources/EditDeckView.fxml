@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="446.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hd.studybuddy.view.editingDeck.EditDeckViewController">
+   <children>
+      <ToolBar prefHeight="75.0" prefWidth="638.0" style="-fx-background-color: #b0dba8;">
+         <items>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="                             Deck" wrappingWidth="479.849609375">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Text>
+         </items>
+      </ToolBar>
+      <Button fx:id="editCardBtn" layoutX="487.0" layoutY="75.0" mnemonicParsing="false" onAction="#editCardBtnClicked" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #b0dba8;" text="EditCard">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <Button fx:id="addCardBtn" layoutX="487.0" layoutY="148.0" mnemonicParsing="false" onAction="#addCardBtnClicked" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #b0dba8;" text="AddCard">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <Button fx:id="deleteCardBtn" layoutX="487.0" layoutY="223.0" mnemonicParsing="false" onAction="#deleteCardBtnClicked" prefHeight="67.0" prefWidth="151.0" style="-fx-background-color: #b0dba8;" text="Delete Card">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font></Button>
+      <ScrollPane fx:id="scrollPane" layoutY="75.0" prefHeight="349.0" prefWidth="487.0">
+         <content>
+            <ListView fx:id="cardsListView" prefHeight="333.0" prefWidth="470.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="refreshButton" layoutX="487.0" layoutY="286.0" mnemonicParsing="false" onAction="#onRefreshButtonClick" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #b0dba8;" text="Refresh ⟳" textFill="#1800ff">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="487.0" layoutY="357.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="87.0" prefWidth="151.0" style="-fx-background-color: #b0dba8;" text="SAVE" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="1.0" layoutY="424.0" prefHeight="21.0" prefWidth="487.0" textFill="#eb1919">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
